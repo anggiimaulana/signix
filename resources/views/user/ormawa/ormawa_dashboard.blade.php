@@ -1,4 +1,4 @@
-@extends('layouts.ormawa')
+@extends('user.ormawa.main')
 @section('title', 'Dashboard Ormawa')
 @section('content')
   <div class="container flex-grow px-4 mx-auto mt-8 max-w-5xl">

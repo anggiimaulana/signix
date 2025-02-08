@@ -91,10 +91,6 @@
                             Please select a role before submitting the form.
                         </div>
 
-                        <div class="flex justify-end mb-6" id="forgotPasswordLink" style="display: none;">
-                            <a href="javascript:void(0);" onclick="toggleForgotPassword()" class="text-sm text-blue-600">Lupa kata sandi?</a>
-                        </div>
-
                         <button type="submit" id="submitButton" class="w-full bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700 transition" style="display: none;">Masuk</button>
                     </form>
 
@@ -102,23 +98,6 @@
                         Dengan menggunakan layanan kami, Anda berarti setuju atas <a href="#" class="text-blue-600">Syarat & Ketentuan</a> dan <a href="#" class="text-blue-600">Kebijakan Privasi</a> Signix
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Forgot Password Section -->
-        <div id="forgotPasswordSection" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
-            <div class="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
-                <div class="flex justify-center mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-1.1.9-2 2-2s2 .9 2 2-2 2-2 2-2-.9-2-2zm0 0c0-1.1-.9-2-2-2s-2 .9-2 2 2 2 2 2 2-.9 2-2zm0 0c0-1.1.9-2 2-2s2 .9 2 2-2 2-2 2-2-.9-2-2zm0 0c0-1.1-.9-2-2-2s-2 .9-2 2 2 2 2 2 2-.9 2-2z" />
-                    </svg>
-                </div>
-                <h2 class="text-center text-lg font-semibold mb-4">Kesulitan masuk?</h2>
-                <p class="text-center text-gray-600 mb-4">Masukkan email, telepon, atau nama pengguna Anda dan kami akan mengirimkan tautan untuk masuk kembali ke akun Anda.</p>
-                <input type="text" placeholder="Email, Telepon, atau Nama Pengguna" class="w-full px-3 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
-                <button class="w-full bg-blue-600 text-white py-2 rounded-md font-semibold hover:bg-blue-700 transition">Kirim tautan masuk</button>
-                <p class="text-center text-sm text-gray-600 mt-4">Tidak bisa mengatur ulang kata sandi Anda?</p>
-                <button onclick="toggleForgotPassword()" class="w-full mt-4 bg-gray-200 text-gray-700 py-2 rounded-md font-semibold hover:bg-gray-300 transition">Kembali ke login</button>
             </div>
         </div>
 
@@ -158,11 +137,6 @@
                     passwordInput.type = 'password';
                     eyeIcon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>';
                 }
-            }
-
-            function toggleForgotPassword() {
-                var forgotPasswordSection = document.getElementById('forgotPasswordSection');
-                forgotPasswordSection.classList.toggle('hidden');
             }
         </script>
     </body>

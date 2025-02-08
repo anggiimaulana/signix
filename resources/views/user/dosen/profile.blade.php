@@ -1,4 +1,4 @@
-@extends('layouts.dosen')
+@extends('user.dosen.main')
 @section('title', 'Profil Dosen')
 @section('content')
     <div class="container px-4 py-8 mx-auto">

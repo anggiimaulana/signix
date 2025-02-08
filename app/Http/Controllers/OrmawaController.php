@@ -20,7 +20,7 @@ class OrmawaController extends Controller
             $search = $request->search;
             $query->where(function($q) use ($search) {
                 $q->where('nomor_surat', 'like', "%$search%")
-                  ->orWhere('perihal', 'like', "%$search%");
+                    ->orWhere('perihal', 'like', "%$search%");
             });
         }
 
@@ -37,7 +37,7 @@ class OrmawaController extends Controller
         $countButuhRevisi = Dokumen::where('id_ormawa', auth()->guard('ormawa')->id())
                                 ->where('status_dokumen', 'butuh revisi')->count();
         $countRevisi = Dokumen::where('id_ormawa', auth()->guard('ormawa')->id())
-                              ->where('status_dokumen', 'sudah direvisi')->count();
+                                ->where('status_dokumen', 'sudah direvisi')->count();
 
         return view('user.ormawa.ormawa_dashboard', compact(
             'dokumens', 
@@ -126,8 +126,8 @@ class OrmawaController extends Controller
             $search = $request->search;
             $query->where(function($q) use ($search) {
                 $q->where('nomor_surat', 'like', "%$search%")
-                  ->orWhere('perihal', 'like', "%$search%")
-                  ->orWhere('status_dokumen', 'like', "%$search%");
+                    ->orWhere('perihal', 'like', "%$search%")
+                    ->orWhere('status_dokumen', 'like', "%$search%");
             });
         }
         // Apply status filter if exists

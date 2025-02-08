@@ -1,4 +1,4 @@
-@extends('layouts.dosen')
+@extends('user.dosen.main')
 @section('title', 'Edit QR Code Position')
 @section('content')
 

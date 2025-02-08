@@ -1,4 +1,4 @@
-@extends('layouts.ormawa')
+@extends('user.ormawa.main')
 @section('title', 'Profil Ormawa')
 @section('content')
     <div class="container px-4 py-8 mx-auto">

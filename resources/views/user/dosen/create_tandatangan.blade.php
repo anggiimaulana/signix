@@ -1,4 +1,4 @@
-@extends('layouts.dosen')
+@extends('user.dosen.main')
 @section('title', 'Buat Tanda Tangan')
 @section('content')
     <div class="container mx-auto mt-20 text-center">
